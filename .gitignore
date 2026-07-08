@@ -1,0 +1,13 @@
+# Compiled files
+*.exe
+*.o
+*.out
+
+# Generated result
+shortest_distance.txt
+
+# VS Code settings
+.vscode/
+
+# Temporary files
+*.tmp

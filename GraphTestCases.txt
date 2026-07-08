@@ -1,0 +1,54 @@
+Test Cases:
+(1):
+u-v-1
+u-x-2
+v-x-2
+v-w-3
+x-w-3
+x-y-1
+w-y-2
+//Results:
+Source: v, Destination: y
+Dijkstra:	v -> x -> y 
+	  	Cost : 3
+
+BFS:		v -> x -> y
+		Cost: 3
+
+(2):
+u-v-3
+u-x-5
+u-w-7
+v-x-1
+v-w-4
+x-w-1
+x-y-6
+w-y-2
+w-z-6
+y-z-1
+//Results:
+Source: u, Destination: y
+Dijkstra:	u -> v -> x -> w -> y 
+	  	Cost : 7
+
+BFS:		u -> x -> y
+		Cost: 11
+
+(3):
+u-v-2
+u-x-1
+u-w-5
+v-x-2
+v-w-3
+x-w-3
+x-y-1
+w-y-1
+w-z-5
+y-z-2
+//Results:
+Source: u, Destination: z
+Dijkstra:	 u -> x -> y -> z 
+	  	Cost : 4
+
+BFS:		u -> w -> z
+		Cost: 10
